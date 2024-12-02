@@ -38,6 +38,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            lsbPort = new ListBox();
             SuspendLayout();
             // 
             // txtAddr
@@ -77,7 +79,7 @@
             btnPing.TabIndex = 4;
             btnPing.Text = "Start";
             btnPing.UseVisualStyleBackColor = true;
-            btnPing.Click += btnPing_Click;
+            btnPing.Click += btnStart;
             // 
             // lsbNslookup
             // 
@@ -92,9 +94,9 @@
             // 
             lsbTrace.FormattingEnabled = true;
             lsbTrace.ItemHeight = 15;
-            lsbTrace.Location = new Point(517, 52);
+            lsbTrace.Location = new Point(519, 52);
             lsbTrace.Name = "lsbTrace";
-            lsbTrace.Size = new Size(372, 184);
+            lsbTrace.Size = new Size(372, 289);
             lsbTrace.TabIndex = 6;
             lsbTrace.SelectedIndexChanged += lsbTrace_SelectedIndexChanged;
             // 
@@ -130,7 +132,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(621, 23);
+            textBox4.Location = new Point(620, 23);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
             textBox4.Size = new Size(150, 23);
@@ -138,12 +140,33 @@
             textBox4.Text = "Trace Route";
             textBox4.TextAlign = HorizontalAlignment.Center;
             // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(306, 242);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(150, 23);
+            textBox5.TabIndex = 11;
+            textBox5.Text = "Ports";
+            textBox5.TextAlign = HorizontalAlignment.Center;
+            // 
+            // lsbPort
+            // 
+            lsbPort.FormattingEnabled = true;
+            lsbPort.ItemHeight = 15;
+            lsbPort.Location = new Point(242, 271);
+            lsbPort.Name = "lsbPort";
+            lsbPort.Size = new Size(271, 79);
+            lsbPort.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
-            ClientSize = new Size(926, 251);
+            ClientSize = new Size(926, 407);
+            Controls.Add(lsbPort);
+            Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -173,5 +196,7 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
+        private TextBox textBox5;
+        private ListBox lsbPort;
     }
 }

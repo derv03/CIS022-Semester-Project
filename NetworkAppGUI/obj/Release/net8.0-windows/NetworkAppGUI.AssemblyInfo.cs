@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetworkAppGUI")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccb9a9d2194edf77a444df8408cd1e313156594c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+308d0ac456cbb973294825f08d34df0ab357c4bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetworkAppGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetworkAppGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
